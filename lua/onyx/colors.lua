@@ -1,4 +1,6 @@
 return {
+    none = "NONE",
+
     deep = "#1a1a1a",
     base = "#202020",
 
@@ -7,45 +9,32 @@ return {
     meh = "#909090",
     text = "#cccccc",
 
-    blue = "#99c0d0",
-    purp = "#bab0e4",
-    red = "#fd70a6",
-    green = "#93e8c7",
+    -- red = "#ddaec3",
+    -- red = "#f89dc9",  -- higher chroma
+    red = "#ff78be",  -- even higher chroma
+    peach = "#deb39c",
+    -- mire = "#c0c295",
+    green = "#97cbb8",
+    blue = "#96c6dd",
+    purp = "#bcb8e2",
 
-	yellow = "#f9e2af",
-    peach = "#fab489",
+    -- new colors generated using oklch:
+    -- l = 0.8, c = 0.06, h = 50 + 60 * n
+    -- https://oklch.com
 
-    -- old references:
-    -- blue = "#9ce0ff",
-    -- maroon = "#e4a0ce",  -- arguments
-    -- mauve = "#ddbbff",
-    -- aqua = "#b5d7e1",
-    -- mauve = "#c8acf2",
-    -- lavender = "#acbbde",
+    -- old colors:
+    -- blue = "#99c0d4",
+    -- func = "#99b898",
+    -- purp = "#bab0e4",
+    -- red = "#fd70a6",
+    -- green = "#93e8c7",
+    -- yellow = "#f9e2af",
+    -- peach = "#fab489",
 
-    -- catppuccin for reference:
-	-- rosewater = "#f5e0dc",
-	-- flamingo = "#f2cdcd",
-	-- pink = "#f5c2e7",
-	-- mauve = "#cba6f7",
-	-- red = "#f38ba8",
-	-- maroon = "#eba0ac",
-	-- yellow = "#f9e2af",
-	-- green = "#a6e3a1",
-	-- teal = "#94e2d5",
-	-- sky = "#89dceb",
-	-- sapphire = "#74c7ec",
-	-- blue = "#89b4fa",
-	-- lavender = "#b4befe",
-	-- text = "#cdd6f4",
-	-- subtext1 = "#bac2de",
-	-- subtext0 = "#a6adc8",
-	-- overlay2 = "#9399b2",
-	-- overlay1 = "#7f849c",
-	-- overlay0 = "#6c7086",
-	-- surface2 = "#585b70",
-	-- surface1 = "#45475a",
-	-- surface0 = "#313244",
-	-- mantle = "#181825",
-	-- crust = "#11111b",
+    -- old colors in oklch:
+    -- text 0.85
+    -- gree 0.87 0.10 168
+    -- blue 0.79 0.05 230
+    -- purp 0.78 0.07 293
+    -- red  0.73 0.18 359
 }
