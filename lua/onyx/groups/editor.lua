@@ -2,26 +2,26 @@ M = {}
 
 function M.get(colors)
     return {
-        Normal = { fg = colors.text, bg = colors.none }, -- normal text
+        Normal = { fg = colors.text, bg = colors.none },
         Cursor = { fg = colors.base, bg = colors.text, bold = true },
         -- lCursor = { link = "Cursor" },
         -- CursorIM = { link = "Cursor" },
         EndOfBuffer = { fg = colors.base }, -- filler lines (~) after the end of the buffer.
-        CursorLine = { bg = colors.none },
+        CursorLine = { bg = colors.deep },
         LineNr = { fg = colors.smol },
         CursorLineNr = { fg = colors.meh },
 
         Visual = { bg = colors.blue, fg = colors.base, bold = true },
 
         Search = { bg = colors.smol, fg = colors.peach },
-        IncSearch = { bg = colors.peach, fg = colors.base, bold = true }, -- initial search; also used for the text replaced with ":s///c"
-        CurSearch = { bg = colors.peach, fg = colors.base, bold = true }, -- selected search: highlights the current search you're on differently
+        IncSearch = { bg = colors.peach, fg = colors.base, bold = true }, -- initial search and text replaced with ":s///c"
+        CurSearch = { bg = colors.peach, fg = colors.base, bold = true },
 
         -- NormalNC = { fg = colors.meh }, -- normal text in non-current windows
-        WinSeparator = { fg = colors.dim, bold = true },
+        WinSeparator = { fg = colors.smol, bold = true },
 
         NormalFloat = { fg = colors.text, bg = colors.none },
-        FloatBorder = { fg = colors.blue },
+        FloatBorder = { fg = colors.dim },
         -- FloatTitle = { link = "Title" }, -- Title of floating windows
 
         Directory = { fg = colors.blue }, -- directory names (and other special names in listings)
@@ -44,28 +44,25 @@ function M.get(colors)
         Keyword = { fg = colors.meh },
         Statement = { link = "Keyword" },
         Exception = { link = "Keyword" },
-        -- Type = { fg = colors.meh, italic = true },
-        Type = { fg = colors.meh },
+        Type = { fg = colors.text },
         Function = { fg = colors.text },
         Number = { fg = colors.blue },
         Boolean = { link = "Number" },
         String = { link = "Number" },
         Character = { link = "String" },
         Identifier = { link = "Normal" },
-        -- Identifier = { fg = colors.meh },
         Label = { fg = colors.blue },
         Special = { fg = colors.blue },
         Constant = { fg = colors.text },
-        -- PreProc = { fg = colors.purp },
         PreProc = { fg = colors.text },
-        Title = { fg = colors.blue, bold = true }, -- titles for output from ":set all", ":autocmd" etc.
+        Title = { fg = colors.blue, bold = true },
 
         Delimiter = { fg = colors.meh },
         Operator = { link = "Delimiter" },
         MatchParen = { fg = colors.text, bold = true },
 
 
-        Added = { fg = colors.green },
+        Added = { fg = colors.blue },
         Changed = { fg = colors.blue },
         Removed = { fg = colors.red },
 

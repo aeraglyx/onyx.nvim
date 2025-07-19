@@ -3,7 +3,10 @@ M = {}
 function M.get(colors)
     return {
         -- nvim-telescope/telescope.nvim
-        TelescopeBorder = { fg = colors.blue },
+        -- TelescopeBorder = { fg = colors.dim },
+        TelescopeBorder = { link = "FloatBorder" },
+        TelescopeTitle = { fg = colors.text },
+        -- TelescopeTitle = { link = "Title" },
         TelescopeMatching = { fg = colors.base, bg = colors.green, bold = true },
         TelescopeSelection = { fg = colors.deep, bg = colors.blue, bold = true },
         TelescopePreviewLine = { link = "TelescopeSelection" },
@@ -12,6 +15,10 @@ function M.get(colors)
         -- saghen/blink.cmp
         BlinkCmpMenuBorder = { link = "FloatBorder" },
         BlinkCmpDocBorder = { link = "BlinkCmpMenuBorder" },
+        SnippetTabstop = { link = "Search" },
+
+        -- kdheepak/lazygit.nvim
+        LazyGitBorder = { fg = colors.base },
 
         -- lukas-reineke/indent-blankline.nvim
         IblIndent = { fg = colors.smol },
