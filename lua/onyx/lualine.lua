@@ -3,7 +3,7 @@ local colors = require("onyx.colors")
 local theme = {}
 
 theme.normal = {
-    a = { bg = colors.blue, fg = colors.base, bold = true },
+    a = { bg = colors.blue, fg = colors.base, gui = "bold" },
     b = { bg = colors.smol, fg = colors.text },
     c = { bg = "NONE", fg = colors.meh },
 }
