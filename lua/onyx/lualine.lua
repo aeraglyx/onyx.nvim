@@ -1,28 +1,22 @@
 local colors = require("onyx.colors")
-
 local theme = {}
 
 theme.normal = {
-    a = { bg = colors.blue, fg = colors.base, gui = "bold" },
-    b = { bg = colors.smol, fg = colors.text },
-    c = { bg = "NONE", fg = colors.meh },
+    a = { fg = colors.meh },
+    b = { fg = colors.meh },
+    c = { fg = colors.dim },
 }
-theme.insert = {
-    a = { bg = colors.green, fg = colors.base, gui = "bold" },
-}
-theme.visual = {
-    a = { bg = colors.purp, fg = colors.base, gui = "bold" },
-}
-theme.replace = {
-    a = { bg = colors.peach, fg = colors.base, gui = "bold" },
-}
-theme.command = {
-    a = { bg = colors.peach, fg = colors.base, gui = "bold" },
-}
+
+theme.insert = { a = { fg = colors.green} }
+theme.visual = { a = { fg = colors.blue } }
+theme.replace = { a = { fg = colors.peach } }
+theme.command = { a = { fg = colors.peach } }
+theme.terminal = { a = { fg = colors.purp } }
+
 theme.inactive = {
-    a = { bg = colors.none, fg = colors.dim },
-    b = { bg = colors.none, fg = colors.dim },
-    c = { bg = colors.none, fg = colors.dim },
+    a = { fg = colors.dim },
+    b = { fg = colors.dim },
+    c = { fg = colors.dim },
 }
 
 return theme
