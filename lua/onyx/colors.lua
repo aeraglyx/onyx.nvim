@@ -1,12 +1,12 @@
 return {
     none = "NONE",
 
-    deep = "#1d1d1d",
-    base = "#222222",
+    deep = "#1c1c1c",
+    base = "#202020",
 
     smol = "#383838",
     dim = "#525252",
-    meh = "#909090",
+    meh = "#888888",
     uhm = "#b0b0b0",
     text = "#c8c8c8",
 
@@ -23,11 +23,4 @@ return {
     -- new colors generated using oklch:
     -- l = 0.8, c = 0.06, h = 50 + 60 * n
     -- https://oklch.com
-
-    -- old colors (oklch):
-    -- text 0.85
-    -- gree 0.87 0.10 168
-    -- blue 0.79 0.05 230
-    -- purp 0.78 0.07 293
-    -- red  0.73 0.18 359
 }
