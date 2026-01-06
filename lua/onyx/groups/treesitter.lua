@@ -20,13 +20,15 @@ function M.get(colors)
         -- ["@property"] = { fg = colors.purp },
 
         ["@conceal"] = { fg = colors.meh },
-        ["@markup.raw"] = { fg = colors.purp },
+        ["@markup.raw"] = { fg = colors.aqua },
         ["@markup.raw.block"] = { fg = colors.meh },
         ["@markup.quote"] = { fg = colors.meh },
         ["@markup.link.markdown_inline"] = { fg = colors.meh },
-        ["@markup.link.label"] = { fg = colors.blue },
-        ["@markup.link.url"] = { fg = colors.meh, underline = true },
-        ["@label"] = { fg = colors.purp }, -- .markdown
+        ["@markup.link.label"] = { fg = colors.aqua },
+        ["@markup.link.url"] = { fg = colors.meh, italic = true },
+        ["@markup.list"] = { link = "Delimiter" },
+        ["@label"] = { fg = colors.purp },
+        ["@label.markdown"] = { fg = colors.meh },
 
         ["@function.builtin"] = { link = "Function", italic = true },
         ["@constant.builtin"] = { link = "Constant", italic = true },
@@ -35,11 +37,12 @@ function M.get(colors)
         ["@variable.parameter.builtin"] = { fg = colors.text }, -- dots in function(...)
         ["@type.builtin"] = { link = "Type", italic = true },
 
-        ["@type.python"] = { link = "Normal", italic = true },
+        -- ["@type.python"] = { link = "Normal", italic = true },
+        -- ["@type.python"] = { fg = colors.text },
         ["@keyword.modifier.c"] = { fg = colors.meh },
         -- ["@keyword.return"] = { fg = colors.purp },
-        ["@keyword.function"] = { fg = colors.purp },
-        ["@keyword.type"] = { fg = colors.purp },
+        -- ["@keyword.function"] = { fg = colors.purp },
+        -- ["@keyword.type"] = { fg = colors.purp },
         ["@keyword.conditional.ternary"] = { link = "Delimiter" },
         -- ["@keyword.directive.css"] = { link = "Keyword" },
         ["@_parent"] = { fg = colors.meh },

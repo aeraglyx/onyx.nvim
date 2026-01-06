@@ -3,14 +3,12 @@ M = {}
 function M.get(colors)
     return {
         -- nvim-telescope/telescope.nvim
-        -- TelescopeBorder = { fg = colors.dim },
         TelescopeBorder = { link = "FloatBorder" },
         TelescopeTitle = { fg = colors.text },
-        -- TelescopeTitle = { link = "Title" },
         TelescopeMatching = { fg = colors.base, bg = colors.green, bold = true },
         TelescopeSelection = { fg = colors.deep, bg = colors.blue, bold = true },
         TelescopePreviewLine = { link = "TelescopeSelection" },
-        -- TelescopeResultsDiffUntracked = { fg = colors.blue },
+        TelescopeResultsDiffUntracked = { fg = colors.green },
 
         -- saghen/blink.cmp
         BlinkCmpMenuBorder = { link = "FloatBorder" },
@@ -47,8 +45,17 @@ function M.get(colors)
         -- link NotifyDEBUGBody Normal
         -- link NotifyTRACEBody Normal
 
+        -- folke/noice.nvim
+        NoiceCmdlinePopupBorder = { fg = colors.text },
+        NoiceCmdlinePopupBorderSearch = { link = "NoiceCmdlinePopupBorder" },
+        NoiceCmdlineIcon = { link = "NoiceCmdlinePopupBorder" },
+        NoiceCmdlineIconSearch = { link = "NoiceCmdlineIcon" },
+
         -- folke/todo-comments.nvim
         -- TodoFgTODO = { fg = colors.dim },
+
+        -- stevearc/oil.nvim
+        OilFile = { fg = colors.meh },
     }
 end
 

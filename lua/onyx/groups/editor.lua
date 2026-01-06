@@ -13,29 +13,29 @@ function M.get(colors)
 
         Visual = { bg = colors.blue, fg = colors.base, bold = true },
 
-        Search = { bg = colors.smol, fg = colors.peach },
-        IncSearch = { bg = colors.peach, fg = colors.base, bold = true }, -- initial search and text replaced with ":s///c"
-        CurSearch = { bg = colors.peach, fg = colors.base, bold = true },
+        Search = { bg = colors.smol, fg = colors.green },
+        IncSearch = { bg = colors.green, fg = colors.base, bold = true }, -- initial search and text replaced with ":s///c"
+        CurSearch = { bg = colors.green, fg = colors.base, bold = true },
 
         -- NormalNC = { fg = colors.meh }, -- normal text in non-current windows
-        WinSeparator = { fg = colors.smol, bold = true },
+        WinSeparator = { fg = colors.dim, bold = true },
 
         NormalFloat = { fg = colors.text, bg = colors.none },
-        FloatBorder = { fg = colors.dim },
+        FloatBorder = { fg = colors.meh },
         -- FloatTitle = { link = "Title" }, -- Title of floating windows
 
-        Directory = { fg = colors.blue }, -- directory names (and other special names in listings)
+        Directory = { fg = colors.text }, -- directory names (and other special names in listings)
 
         Pmenu = { fg = colors.text, bg = colors.none },
         PmenuSel = { fg = colors.base, bg = colors.blue, bold = true }, -- selected item
-        PmenuThumb = { bg = colors.blue }, -- thumb of the scrollbar
+        PmenuThumb = { bg = colors.smol }, -- thumb of the scrollbar
         -- PmenuSbar = { bg = colors.surface1 }, -- scrollbar
         -- PmenuExtra = { fg = colors.overlay0 }, -- normal item extra text
         -- PmenuExtraSel = { fg = colors.overlay0 }, -- selected item extra text
 
-        TabLine = { bg = colors.none, fg = colors.dim }, -- tab pages line, not active tab page label
-        TabLineFill = { bg = colors.none }, -- tab pages line, where there are no labels
+        TabLine = { fg = colors.dim }, -- tab pages line, not active tab page label
         TabLineSel = { fg = colors.text, bold = true }, -- tab pages line, active tab page label
+        TabLineFill = { bg = colors.none }, -- tab pages line, where there are no labels
 
         StatusLine = { fg = colors.dim, bg = colors.none }, -- status line of current window
         StatusLineNC = { fg = colors.smol, bg = colors.none }, -- status lines of not-current windows
@@ -44,9 +44,9 @@ function M.get(colors)
         Keyword = { fg = colors.meh },
         Statement = { link = "Keyword" },
         Exception = { link = "Keyword" },
-        Type = { fg = colors.text },
+        Type = { fg = colors.meh },
         Function = { fg = colors.text },
-        Number = { fg = colors.blue },
+        Number = { fg = colors.aqua },
         Boolean = { link = "Number" },
         String = { link = "Number" },
         Character = { link = "String" },
@@ -63,7 +63,7 @@ function M.get(colors)
 
 
         Added = { fg = colors.blue },
-        Changed = { fg = colors.blue },
+        Changed = { link = "Added" },
         Removed = { fg = colors.red },
 
         DiffAdd = { link = "Added" },
@@ -87,11 +87,14 @@ function M.get(colors)
         healthSuccess = { fg = colors.green },
         healthWarning = { fg = colors.peach },
 
-        netrwClassify = { fg = colors.meh },
-
-        ErrorMsg = { fg = colors.red, bold = true, italic = true }, -- error messages on the command line
+        ErrorMsg = { fg = colors.red }, -- on the command line
         WarningMsg = { fg = colors.peach }, -- warning messages
         MoreMsg = { fg = colors.blue }, -- |more-prompt|
+
+        netrwClassify = { fg = colors.meh },
+
+        helpExample = { fg = colors.meh },
+        helpCommand = { fg = colors.meh },
 
 
         -- ColorColumn = { bg = colors.surface0 }, -- used for the columns set with 'colorcolumn'
