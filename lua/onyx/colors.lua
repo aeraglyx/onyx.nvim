@@ -4,7 +4,7 @@ return {
     deep = "#1a1a1a",
     base = "#202020",
 
-    smol = "#363636",
+    smol = "#383838",
     dim = "#525252",
     meh = "#8b8b8b",
     text = "#c8c8c8",
