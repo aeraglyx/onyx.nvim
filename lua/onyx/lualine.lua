@@ -7,11 +7,11 @@ theme.normal = {
     c = { fg = colors.dim },
 }
 
-theme.insert = { a = { fg = colors.green} }
-theme.visual = { a = { fg = colors.blue } }
-theme.replace = { a = { fg = colors.peach } }
-theme.command = { a = { fg = colors.peach } }
-theme.terminal = { a = { fg = colors.purp } }
+theme.insert = { a = { fg = colors.text } }
+theme.visual = { a = { fg = colors.text } }
+theme.replace = { a = { fg = colors.text } }
+theme.command = { a = { fg = colors.text } }
+theme.terminal = { a = { fg = colors.text } }
 
 theme.inactive = {
     a = { fg = colors.dim },
