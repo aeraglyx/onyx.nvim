@@ -6,16 +6,18 @@ function M.get(colors)
         Cursor = { fg = colors.base, bg = colors.text, bold = true },
         -- lCursor = { link = "Cursor" },
         -- CursorIM = { link = "Cursor" },
-        EndOfBuffer = { fg = colors.base }, -- filler lines (~) after the end of the buffer.
         CursorLine = { bg = colors.deep },
+        CursorColumn = { link = "CursorLine" },
         LineNr = { fg = colors.smol },
-        CursorLineNr = { fg = colors.meh },
+        CursorLineNr = { fg = colors.meh, bg = colors.deep },
+        CursorLineSign = { fg = colors.meh, bg = colors.deep },
+        EndOfBuffer = { fg = colors.smol }, -- filler lines (~) after the end of the buffer.
 
-        Visual = { bg = colors.blue, fg = colors.base, bold = true },
+        Visual = { bg = colors.text, fg = colors.base, bold = true },
 
-        Search = { bg = colors.smol, fg = colors.green },
-        IncSearch = { bg = colors.green, fg = colors.base, bold = true }, -- initial search and text replaced with ":s///c"
-        CurSearch = { bg = colors.green, fg = colors.base, bold = true },
+        Search = { bg = colors.smol, fg = colors.red, bold = true },
+        IncSearch = { bg = colors.red, fg = colors.base, bold = true },
+        CurSearch = { bg = colors.red, fg = colors.base, bold = true },
 
         -- NormalNC = { fg = colors.meh }, -- normal text in non-current windows
         WinSeparator = { fg = colors.dim, bold = true },
@@ -27,8 +29,8 @@ function M.get(colors)
         Directory = { fg = colors.text }, -- directory names (and other special names in listings)
 
         Pmenu = { fg = colors.text, bg = colors.none },
-        PmenuSel = { fg = colors.base, bg = colors.blue, bold = true }, -- selected item
-        PmenuThumb = { bg = colors.smol }, -- thumb of the scrollbar
+        PmenuSel = { fg = colors.base, bg = colors.text, bold = true }, -- selected item
+        PmenuThumb = { bg = colors.meh }, -- thumb of the scrollbar
         -- PmenuSbar = { bg = colors.surface1 }, -- scrollbar
         -- PmenuExtra = { fg = colors.overlay0 }, -- normal item extra text
         -- PmenuExtraSel = { fg = colors.overlay0 }, -- selected item extra text
@@ -42,7 +44,6 @@ function M.get(colors)
 
         -- ColorColumn = { bg = colors.surface0 }, -- used for the columns set with 'colorcolumn'
         -- Conceal = { fg = colors.overlay1 }, -- placeholder characters substituted for concealed text (see 'conceallevel')
-        -- CursorColumn = { bg = colors.mantle }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
         -- VertSplit = { bg = colors.smol, fg = colors.blue }, -- the column separating vertically split windows
         -- Folded = { fg = colors.blue, bg = O.transparent_background and colors.none or colors.surface1 }, -- line used for closed folds
         -- FoldColumn = { fg = colors.overlay0 }, -- 'foldcolumn'
@@ -54,14 +55,14 @@ function M.get(colors)
         -- MsgSeparator = {}, -- Separator for scrolled messages, `msgsep` flag of 'display'
         -- NonText = { fg = colors.overlay0 }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
         -- NormalSB = { fg = colors.meh }, -- doesn't exist?
-        -- Question = { fg = colors.blue }, -- |hit-enter| prompt and yes/no questions
-        -- QuickFixLine = { bg = colors.surface1 }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
+        Question = { fg = colors.green }, -- |hit-enter| prompt and yes/no questions
+        QuickFixLine = { fg = colors.aqua }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
         -- SpecialKey = { link = "NonText" }, -- Unprintable characters: text displayed differently from what it really is.  But not 'listchars' textspace. |hl-Whitespace|
-        -- SpellBad = { sp = colors.red, style = { "undercurl" } }, -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
-        -- SpellCap = { sp = colors.peach, style = { "undercurl" } }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
-        -- SpellLocal = { sp = colors.blue, style = { "undercurl" } }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
-        -- SpellRare = { sp = colors.green, style = { "undercurl" } }, -- Word that is recognized by the spellchecker as one that is hardly ever used.  |spell| Combined with the highlighting used otherwise.
-        -- TermCursor = { fg = colors.base, bg = colors.rosewater }, -- cursor in a focused terminal
+        SpellBad = { sp = colors.red, undercurl = true },
+        SpellCap = { sp = colors.peach, undercurl = true },
+        SpellLocal = { sp = colors.green, undercurl = true },
+        SpellRare = { sp = colors.blue, undercurl = true },
+        TermCursor = { fg = colors.base, bg = colors.text, bold = true }, -- cursor in a focused terminal
         -- TermCursorNC = { fg = colors.base, bg = colors.overlay2 }, -- cursor in unfocused terminals
         -- VisualNOS = { bg = colors.surface1, style = { "bold" } }, -- Visual mode selection when vim is "Not Owning the Selection".
         -- Whitespace = { fg = colors.surface1 }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
