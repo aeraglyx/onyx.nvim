@@ -24,14 +24,14 @@ function M.get(colors)
         MatchParen = { fg = colors.text, bold = true },
 
 
-        Added = { fg = colors.blue },
+        Added = { fg = colors.aqua },
         Changed = { link = "Added" },
         Removed = { fg = colors.red },
 
         DiffAdd = { link = "Added" },
         DiffChange = { link = "Changed" },
         DiffDelete = { link = "Removed" },
-        -- DiffText = { link = "Normal" },
+        DiffText = { bg = colors.aqua, fg = colors.base, bold = true },
 
         DiagnosticError = { fg = colors.red },
         DiagnosticWarn  = { fg = colors.peach },
@@ -49,9 +49,11 @@ function M.get(colors)
         healthSuccess = { fg = colors.green },
         healthWarning = { fg = colors.peach },
 
-        ErrorMsg = { fg = colors.red, bold = true, italic = true }, -- on the command line
-        WarningMsg = { fg = colors.peach }, -- warning messages
-        MoreMsg = { fg = colors.blue }, -- |more-prompt|
+        Error = { fg = colors.red, bold = true },
+        ErrorMsg = { fg = colors.red, bold = true },
+        WarningMsg = { fg = colors.peach },
+        MoreMsg = { fg = colors.blue },
+        ModeMsg = { fg = colors.green },
 
         netrwClassify = { fg = colors.meh },
 
