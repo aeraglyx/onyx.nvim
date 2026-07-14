@@ -63,7 +63,6 @@ function M.get(colors)
         SpellLocal = { sp = colors.green, undercurl = true },
         SpellRare = { sp = colors.blue, undercurl = true },
         TermCursor = { fg = colors.base, bg = colors.text, bold = true }, -- cursor in a focused terminal
-        -- TermCursorNC = { fg = colors.base, bg = colors.overlay2 }, -- cursor in unfocused terminals
         -- VisualNOS = { bg = colors.surface1, style = { "bold" } }, -- Visual mode selection when vim is "Not Owning the Selection".
         -- Whitespace = { fg = colors.surface1 }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
         -- WildMenu = { bg = colors.overlay0 }, -- current match in 'wildmenu' completion

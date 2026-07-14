@@ -16,13 +16,12 @@ function M.get(colors)
         Label = { fg = colors.blue },
         Special = { fg = colors.blue },
         Constant = { fg = colors.text },
-        PreProc = { fg = colors.text },
+        PreProc = { fg = colors.meh },
         Title = { fg = colors.blue, bold = true },
 
         Delimiter = { fg = colors.meh },
         Operator = { link = "Delimiter" },
         MatchParen = { fg = colors.text, bold = true },
-
 
         Added = { fg = colors.aqua },
         Changed = { link = "Added" },
@@ -60,11 +59,16 @@ function M.get(colors)
         helpExample = { fg = colors.meh },
         helpCommand = { fg = colors.meh },
 
-        SassAmpersand = { link = "Delimiter" },
         ShQuote = { link = "String" },
+        ShDeref = { link = "Delimiter" },
         ShCommandSub = { link = "Normal" },
         ShCmdSubRegion = { link = "Delimiter" },
-        -- CssSelectorOp = { link = "Delimiter" },
+        ShArithmetic = { link = "Normal" },
+        ShArithRegion = { link = "Delimiter" },
+        ShSpecial = { link = "Delimiter" },
+
+        SassAmpersand = { link = "Delimiter" },
+        qfLineNr = { fg = colors.dim },
     }
 end
 

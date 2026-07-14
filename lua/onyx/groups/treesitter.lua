@@ -3,11 +3,13 @@ M = {}
 function M.get(colors)
     return {
         ["@module"] = { fg = colors.text },
+        ["@module.builtin"] = { fg = colors.purp },
 
         ["@string.regexp"] = { link = "String" },
         ["@string.escape"] = { fg = colors.meh },
         ["@string.documentation"] = { fg = colors.meh, italic = true },
         ["@string.special"] = { link = "String" },
+        ["@string.special.url"] = { link = "@markup.link.url" },
         -- ["@string.special.path"] = { link = "Normal" },
 
         ["@constructor"] = { fg = colors.text },
@@ -47,8 +49,8 @@ function M.get(colors)
         -- ["@keyword.directive.css"] = { link = "Keyword" },
         ["@_parent"] = { fg = colors.meh },
 
-        -- spell for xml:
-        ["@spell.xml"] = { fg = colors.blue },
+        -- FIXME: xml comments overriden by spell:
+        ["@spell.xml"] = { link = "String" },
         -- TODO: constant.xml? (or builtin)
 
         ["@tag"] = { fg = colors.text },
