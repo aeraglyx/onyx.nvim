@@ -6,9 +6,8 @@ local function get_hl_groups()
     local editor = require("onyx.groups.editor").get(colors)
     local syntax = require("onyx.groups.syntax").get(colors)
     local treesitter = require("onyx.groups.treesitter").get(colors)
-    local plugins = require("onyx.groups.plugins").get(colors)
 
-    local groups = vim.tbl_deep_extend("keep", editor, syntax, treesitter, plugins)
+    local groups = vim.tbl_deep_extend("keep", editor, syntax, treesitter)
     return groups
 end
 
