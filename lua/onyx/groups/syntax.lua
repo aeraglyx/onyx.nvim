@@ -8,7 +8,7 @@ function M.get(colors)
         Exception = { link = "Keyword" },
         Type = { fg = colors.meh },
         Function = { fg = colors.text },
-        Number = { fg = colors.aqua },
+        Number = { fg = colors.blue },
         Boolean = { link = "Number" },
         String = { link = "Number" },
         Character = { link = "String" },
@@ -23,19 +23,19 @@ function M.get(colors)
         Operator = { link = "Delimiter" },
         MatchParen = { fg = colors.text, bold = true },
 
-        Added = { fg = colors.aqua },
+        Added = { fg = colors.blue },
         Changed = { link = "Added" },
         Removed = { fg = colors.red },
 
         DiffAdd = { link = "Added" },
         DiffChange = { link = "Changed" },
         DiffDelete = { link = "Removed" },
-        DiffText = { bg = colors.aqua, fg = colors.base, bold = true },
+        DiffText = { bg = colors.blue, fg = colors.base, bold = true },
 
         DiagnosticError = { fg = colors.red },
         DiagnosticWarn  = { fg = colors.peach },
-        DiagnosticInfo  = { fg = colors.green },
-        DiagnosticHint  = { fg = colors.green },
+        DiagnosticInfo  = { fg = colors.blue },
+        DiagnosticHint  = { fg = colors.blue },
         DiagnosticOk    = { fg = colors.green },
         DiagnosticUnnecessary = { fg = colors.dim },
         DiagnosticUnderlineError = { underline = true, sp = colors.red },
@@ -48,11 +48,12 @@ function M.get(colors)
         healthSuccess = { fg = colors.green },
         healthWarning = { fg = colors.peach },
 
-        Error = { fg = colors.red, bold = true },
-        ErrorMsg = { fg = colors.red, bold = true },
+        Error = { fg = colors.red },
+        ErrorMsg = { fg = colors.red },
+        OkMsg = { fg = colors.green },
         WarningMsg = { fg = colors.peach },
+        ModeMsg = { fg = colors.text },
         MoreMsg = { fg = colors.blue },
-        ModeMsg = { fg = colors.green },
 
         netrwClassify = { fg = colors.meh },
 

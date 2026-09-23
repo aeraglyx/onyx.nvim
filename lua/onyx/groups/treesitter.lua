@@ -3,7 +3,7 @@ M = {}
 function M.get(colors)
     return {
         ["@module"] = { fg = colors.text },
-        ["@module.builtin"] = { fg = colors.purp },
+        ["@module.builtin"] = { fg = colors.text },
 
         ["@string.regexp"] = { link = "String" },
         ["@string.escape"] = { fg = colors.meh },
@@ -22,11 +22,11 @@ function M.get(colors)
         -- ["@property"] = { fg = colors.purp },
 
         ["@conceal"] = { fg = colors.meh },
-        ["@markup.raw"] = { fg = colors.aqua },
+        ["@markup.raw"] = { fg = colors.blue },
         ["@markup.raw.block"] = { fg = colors.meh },
         ["@markup.quote"] = { fg = colors.meh },
         ["@markup.link.markdown_inline"] = { fg = colors.meh },
-        ["@markup.link.label"] = { fg = colors.aqua },
+        ["@markup.link.label"] = { fg = colors.blue },
         ["@markup.link.url"] = { fg = colors.meh, italic = true },
         ["@markup.list"] = { link = "Delimiter" },
         ["@label"] = { fg = colors.purp },
