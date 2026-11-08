@@ -31,11 +31,9 @@ function M.get(colors)
         Directory = { fg = colors.text },
 
         Pmenu = { fg = colors.text, bg = colors.none },
-        PmenuSel = { fg = colors.base, bg = colors.text, bold = true }, -- selected item
-        PmenuThumb = { bg = colors.meh }, -- thumb of the scrollbar
-        -- PmenuSbar = { bg = colors.surface1 }, -- scrollbar
-        -- PmenuExtra = { fg = colors.overlay0 }, -- normal item extra text
-        -- PmenuExtraSel = { fg = colors.overlay0 }, -- selected item extra text
+        PmenuSel = { fg = colors.base, bg = colors.text, bold = true },
+        PmenuThumb = { bg = colors.meh },
+        PmenuBorder = { fg = colors.meh },
 
         TabLine = { fg = colors.dim, bold = true }, -- tab pages line, not active tab page label
         TabLineSel = { fg = colors.blue, bold = true }, -- tab pages line, active tab page label
